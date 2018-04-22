@@ -1,0 +1,207 @@
+﻿<html>
+
+<link rel='shortcut icon' href='../images/logo.png'>
+<link href="css/pages.css" rel="stylesheet">
+
+<title>ബന്ധപ്പെടുക - ഹരിതകേരളം</title>
+
+
+<head>
+
+
+<script language="javascript">
+	function chck()
+	{	x=document.data.name.value;
+		y=document.data.age.value;
+		z=document.data.email.value;
+		a=document.data.phone.value;
+		b=document.data.district.selectedIndex;
+		c=document.data.message.value;
+		d=document.data.captcha.value;
+
+	if (x=="" || y=="" || z=="" || a=="" || c=="")
+		{
+		alert("ദയവായി എല്ലാ കളങ്ങളും പൂരിപ്പിക്കുക.");
+		return;
+		}
+	if (b==0)
+		{
+		alert("ദയവായി താങ്ങളുടെ ജില്ല തിരഞ്ഞെടുക്കുക.");
+		return;
+		}
+	if (d=="")
+		{
+		alert("ദയവായി കാപ്ച പൂരിപ്പിക്കുക.");
+		return;
+		}
+	if (!(isNaN(x)) || x.length<3)
+		{
+		alert("ദയവായി പേര് പുനപരിശോദിക്കുക.");
+		return;
+		}
+
+	if (isNaN(y))
+		{
+		alert("ദയവായി വയസ്സ് പുനപരിശോദിക്കുക.");
+		return;
+		}
+	if (a.length < 10 || isNaN(a))
+		{
+		alert("ദയവായി മൊബൈല്‍ നമ്പര്‍ പുനപരിശോദിക്കുക.");
+		return;
+		}
+	if (d==("freitagWinnie")||d==("Googletakeover"))
+		{
+		alert("എല്ലാ കളങ്ങളും വാലിഡേറ്റ് ചെയ്ത് കഴിഞ്ഞിരിക്കുന്നു. ഈ സേവനം ഉപയോഗിച്ച് ഞങ്ങളോട് സംവദിച്ചതിന് നന്ദി.");
+		location.reload(true);
+		return;
+		}
+
+	else	{
+		alert("താങ്കള്‍ എന്‍റര്‍ ചെയ്ത കാപ്ച തെറ്റാണ്.");
+		return;
+		}
+	}
+	
+	function cap()
+	{
+		document.getElementById("captcha").src="../images/captcha2.png";
+		document.getElementById("capbtn").disabled = true;
+		return;
+	}
+
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<div id="hold" style="width:100%;height:258px;">
+<div id="top">
+<div id="nav">
+	<ul><br>
+	<div id="lang"><center><a href="../contact.htm"><img src="../images/lang_eng.png"><br>ഇംഗ്ലീഷില്‍ വായിക്കുക</a></center></div>
+	<img src="../images/text.png" width="300px"><br>
+	<img hspace="30px" vspace="" src="../images/logo.png" alt="Logo" style="float:left;height:145px;">
+	<li><a href="index.htm">ഹോം</a></li>
+	<li><a href="about.htm">എബൗട്ട്</a></li>
+	<li><a href="gallery.htm">ഗാലറി</a></li>
+	<li><a href="circulars.htm">സര്‍ക്കുലറുകള്‍</a></li>
+	<li><a href="newsletter.htm#newshead">ന്യൂസ് ലെറ്റര്‍</a></li>
+	<li><a id="active" style="color : #FFF;">ബന്ധപ്പെടുക</a></li>
+	</ul><br>
+</div>
+</div>
+</div>
+
+<center><div style="font-family:Meera, Kartika, Karthika;"><font size="7" color="#659D32"><br>ബന്ധപ്പെടുക</font></div></center>
+
+
+
+
+<br><br>
+<div style="width:50%;float:left;height:100px;color:#659D32;font-size:17;font-family: corbel, ubuntu, arial;">
+
+	<center><br><br><font size="3" color="grey"><fieldset style="width:80%;border-left:0;border-bottom:0;border-right:0;"><legend>Sponsored Content</legend></fieldset></font>
+	<img src="../images/tour_ad1.jpg" width="400px" style="border-bottom:50px;">
+	<br><br><fieldset style="width:80%;"><br>കേരള ടൂറിസം - അത്ഭുതങ്ങളിലേക്കുള്ള പടിവാതില്‍!!!<br><br><img src="../images/tour_logo.png" height="70px" hpace="10px"><img hpace="10px" src="../images/tour_logo1.png" height="70px"><br></fieldset>
+	<a style="color:#659D32;text-decoration:none;" href="http://kerlatourism.org" target="blank"><br><img src="../images/link.png"></a><br></center>
+
+</div>
+
+<div style="width:50%;float:left;font-size:26px;font-family:Meera, kartika, karthika;">
+
+<b><FORM Name="data" onsubmit="return false">
+
+<fieldset><legend> വിവരങ്ങള്‍ </legend>
+	<table cellspacing="50px">
+	<tr>
+	<td>പേര് : </td><td><INPUT TYPE="text" Autocomplete="off" Name="name" placeholder="നിങ്ങളുടെ പേര്"></td>
+	</tr>
+
+	<tr>
+	<td>വയസ് : </td><td><INPUT type="text" Autocomplete="off" Name="age" placeholder="നിങ്ങളുടെ വയസ്"></td>
+	</tr>
+
+	<tr>
+	<td>ഇ-മെയില്‍ : </td><td><INPUT TYPE="text" Autocomplete="off" Name="email" placeholder="നിങ്ങളുടെ ഈ-മെയില്‍"></td>
+	</tr>
+
+	<tr>
+	<td>ജില്ല : </td><td><SELECT Name="district">
+			<OPTION>ജില്ല തെരെഞ്ഞെടുക്കുക</OPTION>
+			<OPTION>തിരുവനന്തപുരം</OPTION>
+			<OPTION>കൊല്ലം</OPTION>
+			<OPTION>പത്തനംതിട്ട</OPTION>
+			<OPTION>ആലപ്പുഴ</OPTION>
+			<OPTION>കോട്ടയം</OPTION>
+			<OPTION>ഇടുക്കി</OPTION>
+			<OPTION>എറണാകുളം</OPTION>
+			<OPTION>ത്യശൂര്‍</OPTION>
+			<OPTION>പാലക്കാട്</OPTION>
+			<OPTION>മലപ്പുറം</OPTION>
+			<OPTION>കോഴിക്കോട്</OPTION>
+			<OPTION>വയനാട്</OPTION>
+			<OPTION>കണ്ണൂര്‍</OPTION>
+			<OPTION>കാസറഗോഡ്</OPTION>
+			</SELECT></td>
+	</tr>
+
+	<tr>
+	<td>ഫോണ്‍ : </td><td> +91 &nbsp;&nbsp;&nbsp;<INPUT TYPE="text" Autocomplete="off" Name="phone" Maxlength="10" placeholder="നമ്പര്‍"></td>
+	</tr>
+
+	<tr>
+	<td>സന്ദേശം : </td><td><TEXTAREA Rows="5" name="message" Cols="30" placeholder="നിങ്ങളുടെ സന്ദേശം"></TEXTAREA></td>
+	</tr>
+
+	<tr>
+	<td colspan="2"><center><img id="captcha" src="../images/captcha.png" style="border:1px solid #000;width:200px;height:50px;"><br><br><INPUT TYPE="button" id="capbtn" Value="കാപ്ച മാറ്റുക" onclick="cap()">
+<br></center>
+	</td>
+	</tr>
+
+	<tr>
+	<td>കാപ്ച : </td><td><INPUT TYPE="text" Autocomplete="off" Name="captcha" placeholder="കാപ്ച‍">
+	</td>
+	</tr>
+
+	<tr>
+	<td colspan="2"><center>
+
+<INPUT TYPE="submit" style="width:100px;height:50px;color:#FFE;background:#659D32;" Value="സബ്മിറ്റ്" 
+onclick="chck()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT style="width:100px;height:50px;color:#FFE;background:#659D32;"  TYPE="reset" Value="റീസെറ്റ്"></td></center>
+	</tr>
+
+	</table>
+	</fieldset>
+
+
+
+</FORM></b>
+
+</div>
+
+
+
+
+
+
+<br>
+	
+<br><br><br>
+
+
+</body>
+
+<div id="footer">
+
+	<font size="5"><br><br><a href="index.htm">ഹോം</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.htm">എബൗട്ട്</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gallery.htm">ഗാലറി</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="navakeralam.htm">നവ കേരളം</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="circulars.htm">സര്‍ക്കുലറുകള്‍</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="newsletter.htm#newshead">ന്യൂസ് ലെറ്റര്‍</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration:none;">ബന്ധപ്പെടുക</a><br><br></font><hr color="#ccc" width="70%">
+
+<font size="4"><br>Website Developed by Group 6 of II year CS Batch 2016-17<br><br>Group Members : Murali Krishnan A (Team Leader), Sanjay G, Shijin, Sivaprasad M, Sivaprasad, Nikhil, Anusree Ram</div></font>
+</html>
+	

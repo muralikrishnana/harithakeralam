@@ -1,0 +1,212 @@
+<html>
+
+<link rel='shortcut icon' href='images/logo.png'>
+<link href="css/pages.css" rel="stylesheet">
+
+
+<title>contact - harithakerlam</title>
+
+
+<head>
+
+
+<script language="javascript">
+	function chck()
+	{	x=document.data.name.value;
+		y=document.data.age.value;
+		z=document.data.email.value;
+		a=document.data.phone.value;
+		b=document.data.district.selectedIndex;
+		c=document.data.message.value;
+		d=document.data.captcha.value;
+
+
+	if (x=="" || y=="" || z=="" || a=="" || c=="")
+		{
+		alert("Please Fill Up All Fields.");
+		return;
+		}
+	if (b==0)
+		{
+		alert("Please Select Your District.");
+		return;
+		}
+	if (d=="")
+		{
+		alert("Please Enter Captcha.");
+		return;
+		}
+	if (!(isNaN(x)) || x.length<3)
+		{
+		alert("Invalid Name. Please Recheck.");
+		return;
+		}
+	if (isNaN(y))
+		{
+		alert("Invalid Age. Please Recheck.");
+		return;
+		}
+	if (a.length < 10 || isNaN(a))
+		{
+		alert("Invalid Mobile Number. Please Recheck.");
+		return;
+		}
+	if (d=="freitagWinnie" ||d=="Googletakeover")
+		{
+		alert("All Fields Validated.. Thank You For Contacting Us!!");
+		location.reload(true);
+		return;
+		}
+	else	{
+		alert("Wrong Captcha. Please Recheck.");
+		return;
+		}
+	}
+
+	function cap()
+	{
+		document.getElementById("captcha").src="images/captcha2.png";
+		document.getElementById("capbtn").disabled = true;
+		return;
+	}
+
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<div id="hold" style="width:100%;height:258px;">
+<div id="top">
+<div id="nav">
+	<ul><br>
+	<div id="lang"><center><a href="mal/contact.htm"><img src="images/lang_mal.jpg"><br>View 		page in Malayalam</a></center></div>
+	<img src="images/text.png" width="300px"><br>
+	<img hspace="30px" vspace="" src="images/logo.png" alt="Logo" style="float:left;height:145px;">
+	<li><a href="../index.htm"">Home</a></li>
+	<li><a href="about.htm">About</a></li>
+	<li><a href="gallery.htm">Gallery</a></li>
+	<li><a href="circulars.htm">Circulars</a></li>
+	<li><a href="newsletter.htm#newshead">Newsletter</a></li>
+	<li><a id="active" style="color : #FFF;">Contact</a></li>
+	</ul><br>
+</div>
+</div>
+</div>
+	<br>
+<center><font size="7" color="#659D32" face="arial narrow"><br>Contact Us</font></center>
+
+
+
+
+
+
+<br><br>
+<div style="width:50%;float:left;height:100px;color:#659D32;font-size:17;font-family: corbel, ubuntu, arial;">
+
+	<center><br><br><font size="3" color="grey"><fieldset style="width:80%;border-left:0;border-bottom:0;border-right:0;"><legend>Sponsored Content</legend></fieldset></font>
+	<img src="images/tour_ad1.jpg" width="400px" style="border-bottom:50px;">
+	<br><br><fieldset style="width:80%;"><br>kerala tourism - opening door to wonders!!!<br><br><img src="images/tour_logo.png" height="70px" hpace="10px"><img hpace="10px" src="images/tour_logo1.png" height="70px"><br></fieldset>
+	<a style="color:#659D32;text-decoration:none;" href="http://kerlatourism.org" target="blank"><br><img src="images/link.png"></a><br></center>
+
+</div>
+
+<div style="width:50%;float:left;font-family:corbel, arial, ubuntu;">
+
+<b><FORM Name="data" onsubmit="return false">
+
+<fieldset><legend> Personal Details </legend>
+	<table cellspacing="50px">
+	<tr>
+	<td>NAME : </td><td><INPUT TYPE="text" Autocomplete="off" Name="name" placeholder="Your Name Please"></td>
+	</tr>
+
+	<tr>
+	<td>AGE : </td><td><INPUT type="text" Autocomplete="off" Name="age" placeholder="Please Enter Your Age"></td>
+	</tr>
+
+	<tr>
+	<td>E-MAIL : </td><td><INPUT TYPE="text" Autocomplete="off" Name="email" placeholder="Your Email Please"></td>
+	</tr>
+
+	<tr>
+	<td>DISTRICT : </td><td><SELECT Name="district">
+			<OPTION>Select District</OPTION>
+			<OPTION>TRIVANDRUM</OPTION>
+			<OPTION>KOLLAM</OPTION>
+			<OPTION>PATHANAMTHITTA</OPTION>
+			<OPTION>ALAPUZHA</OPTION>
+			<OPTION>KOTTAYAM</OPTION>
+			<OPTION>IDUKKI</OPTION>
+			<OPTION>ERANAKULAM</OPTION>
+			<OPTION>TRISSUR</OPTION>
+			<OPTION>PALAKKAD</OPTION>
+			<OPTION>MALAPPURAM</OPTION>
+			<OPTION>KOZHIKODE</OPTION>
+			<OPTION>WYNAD</OPTION>
+			<OPTION>KANNUR</OPTION>
+			<OPTION>KASARAGOD</OPTION>
+			</SELECT></td>
+	</tr>
+
+	<tr>
+	<td>PHONE : </td><td> +91 &nbsp;&nbsp;&nbsp;<INPUT TYPE="text" Autocomplete="off" Name="phone" Maxlength="10" placeholder="Mobile Number Please"></td>
+	</tr>
+
+	<tr>
+	<td>Message : </td><td><TEXTAREA name="message" Rows="5" Cols="30" placeholder="Your Message"></TEXTAREA></td>
+	</tr>
+
+	<tr>
+	<td colspan="2"><center><img id="captcha" src="images/captcha.png" style="border:1px solid #000;width:200px;height:50px;"><br><br><INPUT TYPE="button" id="capbtn" Value="Change Captcha" onclick="cap()">
+<br></center>
+	</td>
+	</tr>
+
+	<tr>
+	<td>Captcha : </td><td><INPUT TYPE="text" Name="captcha" Autocomplete="off" placeholder="Enter Captcha">
+	</td>
+	</tr>
+
+	<tr>
+	<td colspan="2"><center>
+
+<INPUT TYPE="submit" onclick="chck()" style="width:100px;height:50px;color:#FFE;background:#659D32;" Value="SUBMIT" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT style="width:100px;height:50px;color:#FFE;background:#659D32;"  TYPE="reset" Value="RESET"></td></center>
+	</tr>
+
+	</table>
+	</fieldset>
+
+
+
+</FORM></b>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+	
+<br><br><br>
+
+
+</body>
+
+<div id="footer">
+
+	<font size="5"><br><br><a href="../index.htm">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.htm">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="gallery.htm">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="navakeralam.htm">Nava Keralam</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="circulars.htm">Circulars</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="newsletter.htm#newshead">Newsletter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration:none;">CONTACT</a><br><br></font><hr color="#ccc" width="70%">
+
+<font size="4"><br>Website Developed by Group 6 of II year CS Batch 2016-17<br><br>Group Members : Murali Krishnan A (Team Leader), Sanjay G, Shijin, Sivaprasad M, Sivaprasad, Nikhil, Anusree Ram</div></font>
+</html>
+	
