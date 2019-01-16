@@ -1,164 +1,157 @@
 body {
-	font-family : Meera, Kartika;
+  font-family: Meera, Kartika;
 }
 
 #lang {
-	position : fixed;
-	right : 10;
-	top : 15;
-	font-size : 23px;
+  position: fixed;
+  right: 10;
+  top: 15;
+  font-size: 1.25em;
+  z-index: 10;
 }
 
 #lang a {
-	opacity : 0.3;
-	text-decoration : none;
-	color : #000;
+  opacity: 0.3;
+  text-decoration: none;
+  color: #000;
 }
 
 #lang a:hover {
-	opacity : 0.9;
-	transition : ease-in-out all .3s;
-	-webkit-transition : ease-in-out all .3s;
+  opacity: 0.9;
+  transition: ease-in-out all 0.3s;
+  -webkit-transition: ease-in-out all 0.3s;
 }
 
 #lang img {
-	width : 30px;
+  width: 30px;
 }
 
 #nav {
-	float : left;
-	width : 100%;
-	overflow : hidden;
-	text-align : center;
-	height :258px;/*180tha*/
-	background-color : #FFE;
-	border-bottom : 4px solid #4CAF50;
-	border-top : 4px solid #4cAF50;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  height: 258px; /*180tha*/
+  background-color: #ffe;
+  border-bottom: 4px solid #4caf50;
+  border-top: 4px solid #4caf50;
 }
 
 #nav ul {
-	list-style-type : none;
-	overflow : hidden;
-	margin : 0;
-	padding : 0;
-	text-align : center;
-	background-color : #FFE;
-	opacity : 0.9;
-	margin-top : 20px;
-	display: inline-block;
-	border-radius : 20px;
-
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ffe;
+  opacity: 0.9;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 20px;
 }
 
 #nav ul li {
-	float : left;
+  float: left;
 }
 
 #nav ul li a {
-	text-decoration : none;
-	display : block;
-	padding : 48.5px 20px;
-	color : #659D32;
-	font-size: 24px;
-
+  text-decoration: none;
+  display: block;
+  padding: 48.5px 20px;
+  color: #659d32;
+  font-size: 24px;
 }
 
 #nav ul li a:hover {
-	border-top : 5px solid #4CAF50;
-	border-bottom : 5px solid #4CAF50;
-	transition : ease-in-out all .3s;
-	-webkit-transition : ease-in-out all .3s;
-	transition-delay : .1s;
-	background-color : #659D32;
-	color : #FFF;
+  border-top: 5px solid #4caf50;
+  border-bottom: 5px solid #4caf50;
+  transition: ease-in-out all 0.3s;
+  -webkit-transition: ease-in-out all 0.3s;
+  transition-delay: 0.1s;
+  background-color: #659d32;
+  color: #fff;
 }
 
-
 #active {
-	border-top : 5px solid #659D32;
-	border-bottom : 5px solid #659D32;
-	background-color : #659D32;
-	border-right : 2px solid #FFF;
-	border-left : 2px solid #FFF;
-
+  border-top: 5px solid #659d32;
+  border-bottom: 5px solid #659d32;
+  background-color: #659d32;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
 }
 
 #datanews {
-	font-size : 20px;
+  font-size: 20px;
 }
 
 #datapic {
-	font-size : 20px;
+  font-size: 20px;
 }
 
 #nam {
-	font-size : 23px;
+  font-size: 23px;
 }
 .picdn {
-	height : 24%;
-	margin : 2px;
+  height: 24%;
+  margin: 2px;
 }
-	
-#imgcap
-{
-	width : 100%;
-	text-align : center;
-	color : #FFF;
-	background : #333;
-	padding-top : 8px;
-	padding-bottom : 8px;
-	font-size : 25px;
+
+#imgcap {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 25px;
 }
 
 #newshead {
-	width : 80%;
-	float : left;
-	background : #FFF;
+  width: 80%;
+  float: left;
+  background: #fff;
 }
 
 #scroll {
-	font-size : 25px;
-	padding-top : 20px;
+  font-size: 25px;
+  padding-top: 20px;
 }
 
 #nlink {
-	font-size : 30px;
+  font-size: 30px;
 }
 
 #nlink a:hover {
-	text-decoration : underline;
+  text-decoration: underline;
 }
 
 #foot {
-	width : 100%;
-	text-align : center;
-	background : #FFF;
-	border : 2px solid #333;
-	border-radius : 0 0 5% 5%;
-	float : left;
-	color : #333;
-	font-size : 20px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 0 0 5% 5%;
+  float: left;
+  color: #333;
+  font-size: 20px;
 }
 
 #footer {
-	text-align : center;
-	height : 300px;
-	background : #333;
-	color : #FFF;
-	float : left;
-	width : 100%;
-
+  text-align: center;
+  height: 300px;
+  background: #333;
+  color: #fff;
+  float: left;
+  width: 100%;
 }
-	
 
 #footer a {
-	color : #FFF;
-	text-decoration : none;
-	font-family : Meera, Kartika, Karthika;
+  color: #fff;
+  text-decoration: none;
+  font-family: Meera, Kartika, Karthika;
 }
 
 #footer a:hover {
-	color : #FFF;
-	text-decoration : underline;
+  color: #fff;
+  text-decoration: underline;
 }
-
